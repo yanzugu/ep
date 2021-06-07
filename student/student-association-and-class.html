@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-Hans-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@next"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/slide.css">
+    <link rel="stylesheet" href="../style/bulletin.css">
+    <title>Student Association</title>
+
+    <script src="../js/nav.js"></script>
+    <script src="../js/footer.js"></script>
+    <script src="../js/slides.js"></script>
+    <script src="../js/honors.js"></script>
+    <script src="../js/bulletin.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <nav-component></nav-component>
+        <main>
+            <div class="bulletin">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="bulletin-headline">系學會及班級專欄</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="bulletin-content">
+                    <tbody>
+                        <tr>
+                            <td class="date"><a href="#">系學會 歷屆幹部</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="bulletin-content">
+                    <tbody>
+                        <tr>
+                            <td class="date"><a href="#">導師制週會活動、系學會活動 公告欄</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="bulletin-content">
+                    <tbody>
+                        <tr>
+                            <td class="date"><a href="#">學生事務佈告欄</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="bulletin-content">
+                    <tbody>
+                        <tr>
+                            <td class="date"><a href="#">電物系碩士班班級網頁</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="bulletin-content">
+                    <tbody>
+                        <tr>
+                            <td class="date"><a href="#">國立嘉義大學電子物理系 Faceboook</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="bulletin-content">
+                    <tbody>
+                        <tr>
+                            <td class="date"><a href="#">嘉大電物系 光電暨固態電子碩士班 Facebook</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+        <footer-component></footer-component>
+    </div>
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

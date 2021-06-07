@@ -1,0 +1,54 @@
+.bulletin {
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 50px;
+}
+ 
+.bulletin table {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.bulletin-title {
+    background-color: #00e1ff;
+    border-radius: 25px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.bulletin .date {
+    width: 10%;
+    padding-left: 5%;
+}
+
+.bulletin .type {
+    width: 15%;
+    padding-left: 5%;
+}
+
+.bulletin .title {
+    width: 50%;
+    padding-left: 5%;
+    padding: 2px;
+}
+
+.bulletin-content {
+    border-bottom: #929292 2px solid;
+    font-size: 13px;
+}
+
+.bulletin-content a {
+    text-decoration: none;
+}
+
+.bulletin-headline {
+    color: #f00;
+    border-left: #ff9027 6px solid;
+    padding-left: 5px;
+    font-size: 18px;
+}
+
+.more {
+    text-align: right;
+    font-size: 12px;
+}

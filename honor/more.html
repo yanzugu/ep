@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-Hans-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@next"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/slide.css">
+    <link rel="stylesheet" href="../style/bulletin.css">
+    <title>Honor</title>
+
+    <script src="../js/nav.js"></script>
+    <script src="../js/footer.js"></script>
+    <script src="../js/slides.js"></script>
+    <script src="../js/honors.js"></script>
+    <script src="../js/bulletin.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <nav-component></nav-component>
+        <main>
+            <div class="bulletin">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="bulletin-headline">榮譽榜</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="row">
+                    <div class="col-xl-3 col-md-4 col-sm-6 py-2" v-for="honor in showHonor">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ honor.type }}</h5>
+                                <p v-if="honor.type === ''"><br><a href="#">{{
+                                        honor.title.substring(0,
+                                        35)
+                                        }}</a></p>
+                                <p v-else><a href="#">{{ honor.title.substring(0, 23) +
+                                        (honor.title.length > 24
+                                        ? '...' : '') }}</a></p>
+                                <p class="card-text">- {{ honor.date }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <table>
+                    <tbody>
+                        <tr style="float: left;">
+                            <td style="float: left; font-size: 14px;">
+                                共 {{ honors.length }} 筆　目前在 {{ honorRange + 1 }} / {{ honorPageNumber }} 頁
+                            </td>
+                        </tr>
+                        <tr style="float: right;">
+                            <td v-for="i in honorPageNumber" style="float: left;">
+                                <button class="btn btn-outline-dark" type="button"
+                                    @click="currentHonorPage(i-1)">{{ i }}</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+        <footer-component></footer-component>
+    </div>
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

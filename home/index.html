@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-Hans-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@next"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/slide.css">
+    <link rel="stylesheet" href="../style/bulletin.css">
+    <title>NCYU - PHYS</title>
+
+    <script src="../js/nav.js"></script>
+    <script src="../js/footer.js"></script>
+    <script src="../js/slides.js"></script>
+    <script src="../js/honors.js"></script>
+    <script src="../js/bulletin.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <nav-component></nav-component>
+        <main>
+            <section>
+                <section>
+                    <div class="slideshow-container">
+                        <div class="mySlides s-fade" v-for="(slide, idx) in slides">
+                            <div class="numbertext">{{ idx+1 }} / {{ slides.length }}</div>
+                            <img :src="slide.link" style="width:100%">
+                            <div class="text caption">{{ slide.caption }}</div>
+                        </div>
+                        <a class="prev" @click="plusSlides(-1)">&#10094;</a>
+                        <a class="next" @click="plusSlides(1)">&#10095;</a>
+                        <br>
+                        <div style="text-align:center">
+                            <span class="dot" v-for="(slide, idx) in slides" @click="currentSlide(idx+1)"></span>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="bulletin">
+                    <section>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td class="bulletin-headline">系所公告</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="bulletin-title">
+                            <tbody>
+                                <tr>
+                                    <td class="date">日期</td>
+                                    <td class="type">類別</td>
+                                    <td class="title">標題</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="bulletin-content" v-for="i in 8">
+                            <tbody>
+                                <tr>
+                                    <td class="date">{{ bulletin[i-1].date }}</td>
+                                    <td class="type">{{ bulletin[i-1].type }}</td>
+                                    <td class="title"><a href="#">{{ bulletin[i-1].title }}</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="more">
+                            <tbody>
+                                <tr>
+                                    <td><img src="../img/more.gif" alt=""><a href="../bulletin/more.html"> 更多資訊</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+
+                    <section>
+                        <br>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td class="bulletin-headline">榮譽榜</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="row">
+                            <div class="col-xl-3 col-md-4 col-sm-6 py-2" v-for="i in 8">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">{{ honors[i-1].type }}</h5>
+                                        <p v-if="honors[i-1].type === ''"><br><a href="#">{{
+                                                honors[i-1].title.substring(0,
+                                                35)
+                                                }}</a></p>
+                                        <p v-else><a href="#">{{ honors[i-1].title.substring(0, 23) +
+                                                (honors[i-1].title.length > 24
+                                                ? '...' : '') }}</a></p>
+                                        <p class="card-text">- {{ honors[i-1].date }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <table class="more">
+                            <tbody>
+                                <tr>
+                                    <td><img src="../img/more.gif" alt=""><a href="../honor/more.html"> 更多資訊</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                </div>
+            </section>
+
+            <section>
+
+            </section>
+        </main>
+        <footer-component></footer-component>
+    </div>
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+body {
+    font-family: "Helvetica", "Arial","LiHei Pro","黑體-繁","微軟正黑體", sans-serif;
+    background-color: #fffede
+}
+
+.navbar {
+    padding: 3px;
+}
+
+footer {
+    margin: auto;
+    border-bottom: #f55 2px solid;
+    text-align: center;
+    max-width: 70%;
+    font-size: 15px;
+    margin-top: 10%;
+}
+
+.cpr {
+    font-size: 10px;
+}
+
+.detail {
+    color: #52f;
+}
+
+.atom {
+    max-width: 80px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    opacity: 0.75;
+}
+
+.atom:hover {
+    cursor: pointer;
+}
+
+.alumni-img {
+    width: 100%;
+    float: right;
+    max-width: 300px;
+}
+
+@media screen and (max-width: 768px) {
+    .alumni-img {
+        max-width: 100px;
+    }
+
+    .atom {
+        width: 0;
+    }
+}
