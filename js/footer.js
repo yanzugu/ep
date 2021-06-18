@@ -3,6 +3,8 @@ const footer = {
     <footer>
             <div class="wrap">
                 <div class="footer-item">
+                    <a href="../home"><img src="../img/logo2.png"></a>
+                    <hr style="color: #fff;">
                     <p class="cpr">國立嘉義大學　版權所有　Copyright © 2017 All Rights Reserved.</p>
                     <p class="detail">
                         國立嘉義大學 電子物理學系<br>
