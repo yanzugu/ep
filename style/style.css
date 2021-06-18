@@ -3,6 +3,11 @@ body {
     background-color: #fffede
 }
 
+.row {
+    margin: 0;
+    padding: 0;
+}
+
 .navbar {
     padding: 3px;
 }
@@ -80,5 +85,10 @@ footer .wrap {
 
     .footer-link {
         width: 100%;
+    }
+
+    .footer-item {
+        margin: auto;
+        margin-top: 30px;
     }
 }
