@@ -8,20 +8,47 @@ body {
 }
 
 footer {
+    background-color: #333;
+}
+
+footer .wrap {
     margin: auto;
-    border-bottom: #f55 2px solid;
     text-align: center;
     max-width: 70%;
     font-size: 15px;
     margin-top: 10%;
 }
 
+.footer-link {
+    width: 400px;
+}
+
+.footer-item {
+    display: inline-block;
+    margin: 30px 70px;
+}
+
+.footer-link a {
+    text-decoration: none;
+    text-align: left;
+    color: #aaa;
+    float: left;
+}
+
+.footer-link li {
+    display: inline-block;
+    width: 50%;
+}
+
 .cpr {
     font-size: 10px;
+    color: #fa0;
 }
 
 .detail {
-    color: #52f;
+    color: rgb(34, 156, 255);
+    margin: 0;
+    padding: 0;
 }
 
 .atom {
@@ -49,5 +76,9 @@ footer {
 
     .atom {
         width: 0;
+    }
+
+    .footer-link {
+        width: 100%;
     }
 }

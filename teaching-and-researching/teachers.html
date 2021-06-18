@@ -13,20 +13,518 @@
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="../style/slide.css">
     <link rel="stylesheet" href="../style/bulletin.css">
-    <title>Teachers</title>
+    <title>專任教師列表</title>
 
     <script src="../js/nav.js"></script>
     <script src="../js/footer.js"></script>
     <script src="../js/slides.js"></script>
     <script src="../js/honors.js"></script>
     <script src="../js/bulletin.js"></script>
+
+    <style>
+        .card {
+            height: 430px;
+            margin-bottom: 20px;
+            border-radius: 25px;
+            max-width: 320px;
+            padding: 0;
+            margin: auto;
+            margin-bottom: 20px;
+            border: 1px #ccc solid;
+        }
+
+        .card a {
+            text-decoration: none;
+        }
+
+        .card-img {
+            height: 130px;
+            width: 130px;
+            border-radius: 100%;
+            border: 3px solid #fa0;
+            padding: 0;
+            margin: auto;
+            margin-top: 10px;
+        }
+
+        .card-body {
+            width: 100%;
+            padding-top: 30px;
+            line-height: 1.8;
+        }
+
+        .tmore {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+        }
+
+        .tmore img {
+            width: 23px;
+        }
+    </style>
 </head>
 
 <body>
     <div id="app">
         <nav-component></nav-component>
         <main>
-            
+            <div class="bulletin">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="bulletin-headline">本系專任教師</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="row">
+                    <div class="card col-lg-4 col-md-6 col-sm-12">
+                        <a href="https://www.ncyu.edu.tw/phys/content.aspx?site_content_sn=39645" class="tmore"><img
+                                src="../img/more.png" alt=""></a>
+                        <img class="card-img" src="../img/teachers/1.jpg" alt="Img not found">
+                        <div class="card-body">
+                            <p>
+                                職稱：教授 兼系主任
+                                <br>
+                                姓名：余昌峰 Chang-Feng Yu
+                                <br>
+                                學歷：國立 交通大學 電子工程博士
+                                <br>
+                                研究領域：平面顯示器技術、薄膜製程、真空系統之設計與組裝
+                                <br>
+                                <a href="http://goo.gl/li4jW">【嘉大研究成果連結】</a>
+                                <br>
+                                電話：(05) 271-7953
+                                <br>
+                                E-mail：<a href="mailto:cfyu@mail.ncyu.edu.tw">cfyu@mail.ncyu.edu.tw</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card col-lg-4 col-md-6 col-sm-12">
+                        <a href="https://www.ncyu.edu.tw/phys/content.aspx?site_content_sn=39651" class="tmore"><img
+                                src="../img/more.png" alt=""></a>
+                        <img class="card-img" src="../img/teachers/2.jpg" alt="Img not found">
+                        <div class="card-body">
+                            <p>
+                                職稱：教授
+                                <br>
+                                姓名：陳思翰 Sy-Hann Chen
+                                <br>
+                                學歷：國立 交通大學 電子物理博士
+                                <br>
+                                研究領域：光電分析、磁性分析、結構分析及奈米加工
+                                <br>
+                                <a href="http://goo.gl/vXO1e">【嘉大研究成果連結】</a>
+                                <br>
+                                電話：(05) 271-7992
+                                <br>
+                                E-mail：<a href="mailto:shchen@mail.ncyu.edu.tw">shchen@mail.ncyu.edu.tw</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card col-lg-4 col-md-6 col-sm-12">
+                        <a href="https://www.ncyu.edu.tw/phys/content.aspx?site_content_sn=39576" class="tmore"><img
+                                src="../img/more.png" alt=""></a>
+                        <img class="card-img" src="../img/teachers/3.jpg" alt="Img not found">
+                        <div class="card-body">
+                            <p>
+                                職稱：特聘教授
+                                <br>
+                                姓名：黃俊達 Jun-Dar Hwang
+                                <br>
+                                學歷：國立 成功大學 電機博士
+                                <br>
+                                研究領域：太陽能電池、 光檢測器、光電材料與元件、ULSI製程技術
+                                <br>
+                                <a href="http://goo.gl/4yT5f">【嘉大研究成果連結】</a>
+                                <br>
+                                電話：(05) 271-7958
+                                <br>
+                                E-mail：<a href="mailto:jundar@mail.ncyu.edu.tw">jundar@mail.ncyu.edu.tw</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card col-lg-4 col-md-6 col-sm-12">
+                        <a href="https://www.ncyu.edu.tw/phys/content.aspx?site_content_sn=39606" class="tmore"><img
+                                src="../img/more.png" alt=""></a>
+                        <img class="card-img" src="../img/teachers/4.jpg" alt="Img not found">
+                        <div class="card-body">
+                            <p>
+                                職稱：教授
+                                <br>
+                                姓名：李宗隆 Tsung-Lung Li
+                                <br>
+                                學歷：美國 華盛頓大學 電機工程博士
+                                <br>
+                                研究領域：半導體物理、元件及製程模擬、光電元件、ULSI技術
+                                <br>
+                                <a href="http://goo.gl/yrXPe">【嘉大研究成果連結】</a>
+                                <br>
+                                電話：(05) 271-7904
+                                <br>
+                                E-mail：<a href="mailto:quantum@mail.ncyu.edu.tw">quantum@mail.ncyu.edu.tw</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card col-lg-4 col-md-6 col-sm-12">
+                        <a href="https://www.ncyu.edu.tw/phys/content.aspx?site_content_sn=39633" class="tmore"><img
+                                src="../img/more.png" alt=""></a>
+                        <img class="card-img" src="../img/teachers/5.jpg" alt="Img not found">
+                        <div class="card-body">
+                            <p>
+                                職稱：教授
+                                <br>
+                                姓名：洪一弘 Ie-Hong Hong
+                                <br>
+                                學歷：國立 清華大學 物理博士
+                                <br>
+                                研究領域：光電子能譜顯微術、光電子全像術、X光奈米聚焦技術
+                                <br>
+                                <a href="http://goo.gl/15oeK">【嘉大研究成果連結】</a>
+                                <br>
+                                電話：(05) 271-7954
+                                <br>
+                                E-mail：<a href="mailto:ihhong@mail.ncyu.edu.tw">ihhong@mail.ncyu.edu.tw</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card col-lg-4 col-md-6 col-sm-12">
+                        <a href="https://www.ncyu.edu.tw/phys/content.aspx?site_content_sn=39629" class="tmore"><img
+                                src="../img/more.png" alt=""></a>
+                        <img class="card-img" src="../img/teachers/6.jpg" alt="Img not found">
+                        <div class="card-body">
+                            <p>
+                                職稱：教授
+                                <br>
+                                姓名：鄭秋平 Chiu-Ping Cheng
+                                <br>
+                                學歷：國立 清華大學 物理博士
+                                <br>
+                                研究領域：表面物理、光電子實驗、同步輻射、薄膜物理
+                                <br>
+                                <a href="http://goo.gl/7juJD">【嘉大研究成果連結】</a>
+                                <br>
+                                電話：(05) 271-7903
+                                <br>
+                                E-mail：<a href="mailto:cpcheng@mail.ncyu.edu.tw">cpcheng@mail.ncyu.edu.tw</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card col-lg-4 col-md-6 col-sm-12">
+                        <a href="https://www.ncyu.edu.tw/phys/content.aspx?site_content_sn=29699" class="tmore"><img
+                                src="../img/more.png" alt=""></a>
+                        <img class="card-img" src="../img/teachers/7.jpg" alt="Img not found">
+                        <div class="card-body">
+                            <p>
+                                職稱：教授
+                                <br>
+                                姓名：蘇炯武 Chiung-Wu Su
+                                <br>
+                                學歷：國立 臺灣師範大學 物理博士
+                                <br>
+                                研究領域：奈米表面磁性物理、超薄膜製程技術
+                                <br>
+                                <a href="http://goo.gl/FYZDi">【嘉大研究成果連結】</a>
+                                <br>
+                                電話：(05) 271-7990
+                                <br>
+                                E-mail：<a href="mailto:cwsu@mail.ncyu.edu.tw">cwsu@mail.ncyu.edu.tw</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card col-lg-4 col-md-6 col-sm-12">
+                        <a href="https://www.ncyu.edu.tw/phys/content.aspx?site_content_sn=29155" class="tmore"><img
+                                src="../img/more.png" alt=""></a>
+                        <img class="card-img" src="../img/teachers/8.jpg" alt="Img not found">
+                        <div class="card-body">
+                            <p>
+                                職稱：教授
+                                <br>
+                                姓名：許芳文 Fang-Wen Sheu
+                                <br>
+                                學歷：國立 臺灣大學 物理博士
+                                <br>
+                                研究領域：光電物理、雷射物理、超快光學、非線性光學、光孤子、光鉗
+                                <br>
+                                <a href="http://goo.gl/M4bPi">【嘉大研究成果連結】</a>
+                                <br>
+                                電話：(05) 271-7993
+                                <br>
+                                E-mail：<a href="mailto:fwsheu@mail.ncyu.edu.tw">fwsheu@mail.ncyu.edu.tw</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card col-lg-4 col-md-6 col-sm-12">
+                        <a href="https://www.ncyu.edu.tw/phys/content.aspx?site_content_sn=39665" class="tmore"><img
+                                src="../img/more.png" alt=""></a>
+                        <img class="card-img" src="../img/teachers/9.jpg" alt="Img not found">
+                        <div class="card-body">
+                            <p>
+                                職稱：教授
+                                <br>
+                                姓名：陳慶緒 Ching-Hsu Chen
+                                <br>
+                                學歷：國立 交通大學 光電工程博士
+                                <br>
+                                研究領域：光電子學、液晶物理、非線性動力學
+                                <br>
+                                <a href="http://goo.gl/kLLM8">【嘉大研究成果連結】</a>
+                                <br>
+                                電話：(05) 271-7412
+                                <br>
+                                E-mail：<a href="mailto:chchen@mail.ncyu.edu.tw">chchen@mail.ncyu.edu.tw</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card col-lg-4 col-md-6 col-sm-12">
+                        <a href="https://www.ncyu.edu.tw/phys/content.aspx?site_content_sn=39661" class="tmore"><img
+                                src="../img/more.png" alt=""></a>
+                        <img class="card-img" src="../img/teachers/10.jpg" alt="Img not found">
+                        <div class="card-body">
+                            <p>
+                                職稱：教授
+                                <br>
+                                姓名：高柏青 Po-Ching Kao
+                                <br>
+                                學歷：國立 成功大學 電機博士
+                                <br>
+                                研究領域：有機發光二極體、太陽能電池、記憶體、螢光材料
+                                <br>
+                                <a href="http://goo.gl/RWGfJ">【嘉大研究成果連結】</a>
+                                <br>
+                                電話：(05) 271-7416
+                                <br>
+                                E-mail：<a href="mailto:pckao@mail.ncyu.edu.tw">pckao@mail.ncyu.edu.tw</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card col-lg-4 col-md-6 col-sm-12">
+                        <a href="https://www.ncyu.edu.tw/phys/content.aspx?site_content_sn=39630" class="tmore"><img
+                                src="../img/more.png" alt=""></a>
+                        <img class="card-img" src="../img/teachers/11.jpg" alt="Img not found">
+                        <div class="card-body">
+                            <p>
+                                職稱：教授
+                                <br>
+                                姓名：蔡明善 Ming-Shan Tsai
+                                <br>
+                                學歷：國立 成功大學 物理博士
+                                <br>
+                                研究領域：液晶物理、光電子學、非線性光學
+                                <br>
+                                <a href="http://goo.gl/Pq1KX">【嘉大研究成果連結】</a>
+                                <br>
+                                電話：(05) 271-7955
+                                <br>
+                                E-mail：<a href="mailto:mstsai@mail.ncyu.edu.tw">mstsai@mail.ncyu.edu.tw</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card col-lg-4 col-md-6 col-sm-12">
+                        <a href="https://www.ncyu.edu.tw/phys/content.aspx?site_content_sn=39632" class="tmore"><img
+                                src="../img/more.png" alt=""></a>
+                        <img class="card-img" src="../img/teachers/12.jpg" alt="Img not found">
+                        <div class="card-body">
+                            <p>
+                                職稱：副教授
+                                <br>
+                                姓名：林立弘 Li-Hung Lin
+                                <br>
+                                學歷：日本 千葉大學 理學博士
+                                <br>
+                                研究領域：半導體異質結構、量子井及量子點的傳導、半導體光電分析
+                                <br>
+                                <a href="http://goo.gl/3qjfX">【嘉大研究成果連結】</a>
+                                <br>
+                                電話：(05) 271-7410
+                                <br>
+                                E-mail：<a href="mailto:lihung@mail.ncyu.edu.tw">lihung@mail.ncyu.edu.tw</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card col-lg-4 col-md-6 col-sm-12">
+                        <a href="https://www.ncyu.edu.tw/phys/content.aspx?site_content_sn=39660" class="tmore"><img
+                                src="../img/more.png" alt=""></a>
+                        <img class="card-img" src="../img/teachers/13.jpg" alt="Img not found">
+                        <div class="card-body">
+                            <p>
+                                職稱：副教授
+                                <br>
+                                姓名：陳穗斌 Sui-Pin Chen
+                                <br>
+                                學歷：國立 臺灣大學 物理博士
+                                <br>
+                                研究領域：自旋電子傳輸及穿隧理論、 自旋霍爾效應
+                                <br>
+                                <a href="http://goo.gl/ysJ2Z">【嘉大研究成果連結】</a>
+                                <br>
+                                電話：(05) 271-7908
+                                <br>
+                                E-mail：<a href="mailto:spchen@mail.ncyu.edu.tw">spchen@mail.ncyu.edu.tw</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card col-lg-4 col-md-6 col-sm-12">
+                        <a href="https://www.ncyu.edu.tw/phys/content.aspx?site_content_sn=55753" class="tmore"><img
+                                src="../img/more.png" alt=""></a>
+                        <img class="card-img" src="../img/teachers/14.jpg" alt="Img not found">
+                        <div class="card-body">
+                            <p>
+                                職稱：(專案) 助理教授
+                                <br>
+                                姓名：陳挺煒 Ting-Wei Chen
+                                <br>
+                                學歷：國立 成功大學 光電科學與工程博士
+                                <br>
+                                研究領域：微共振腔極化子物理、光電物理、固態雷射
+                                <br>
+                                <a href="https://web085004.adm.ncyu.edu.tw/eres.pub/Res.aspx?thrid=K0084">【嘉大研究成果連結】</a>
+                                <br>
+                                電話：(05) 271-7906
+                                <br>
+                                E-mail：<a href="mailto:twchen@mail.ncyu.edu.tw">twchen@mail.ncyu.edu.tw</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="bulletin-headline">專任教師列表</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table class="bulletin-content">
+                    <tbody>
+                        <tr>
+                            <td class="date"><a
+                                    href="https://www.ncyu.edu.tw/phys/content.aspx?site_content_sn=29155">許芳文 老師</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="bulletin-content">
+                    <tbody>
+                        <tr>
+                            <td class="date"><a
+                                    href="https://www.ncyu.edu.tw/phys/content.aspx?site_content_sn=39651">陳思翰 老師</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="bulletin-content">
+                    <tbody>
+                        <tr>
+                            <td class="date"><a
+                                    href="https://www.ncyu.edu.tw/phys/content.aspx?site_content_sn=39576">黃俊達 老師</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="bulletin-content">
+                    <tbody>
+                        <tr>
+                            <td class="date"><a
+                                    href="https://www.ncyu.edu.tw/phys/content.aspx?site_content_sn=39606">李宗隆 老師</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="bulletin-content">
+                    <tbody>
+                        <tr>
+                            <td class="date"><a
+                                    href="https://www.ncyu.edu.tw/phys/content.aspx?site_content_sn=39629">鄭秋平 老師</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="bulletin-content">
+                    <tbody>
+                        <tr>
+                            <td class="date"><a
+                                    href="https://www.ncyu.edu.tw/phys/content.aspx?site_content_sn=39633">洪一弘 老師</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="bulletin-content">
+                    <tbody>
+                        <tr>
+                            <td class="date"><a
+                                    href="https://www.ncyu.edu.tw/phys/content.aspx?site_content_sn=39630">蔡明善 老師</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="bulletin-content">
+                    <tbody>
+                        <tr>
+                            <td class="date"><a
+                                    href="https://www.ncyu.edu.tw/phys/content.aspx?site_content_sn=39632">林立弘 老師</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="bulletin-content">
+                    <tbody>
+                        <tr>
+                            <td class="date"><a
+                                    href="https://www.ncyu.edu.tw/phys/content.aspx?site_content_sn=39645">余昌峰 老師</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="bulletin-content">
+                    <tbody>
+                        <tr>
+                            <td class="date"><a
+                                    href="https://www.ncyu.edu.tw/phys/content.aspx?site_content_sn=29699">蘇炯武 老師</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="bulletin-content">
+                    <tbody>
+                        <tr>
+                            <td class="date"><a
+                                    href="https://www.ncyu.edu.tw/phys/content.aspx?site_content_sn=39665">陳慶緒 老師</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="bulletin-content">
+                    <tbody>
+                        <tr>
+                            <td class="date"><a
+                                    href="https://www.ncyu.edu.tw/phys/content.aspx?site_content_sn=39660">陳穗斌 老師</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="bulletin-content">
+                    <tbody>
+                        <tr>
+                            <td class="date"><a
+                                    href="https://www.ncyu.edu.tw/phys/content.aspx?site_content_sn=39661">高柏青 老師</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="bulletin-content">
+                    <tbody>
+                        <tr>
+                            <td class="date"><a
+                                    href="https://www.ncyu.edu.tw/phys/content.aspx?site_content_sn=55753">陳挺煒 老師</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </main>
         <footer-component></footer-component>
     </div>
