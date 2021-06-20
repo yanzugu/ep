@@ -13,7 +13,10 @@
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="../style/slide.css">
     <link rel="stylesheet" href="../style/bulletin.css">
-    <title>Lesson map</title>
+    <link rel="stylesheet" href="lesson-map.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Sans+TC&family=Noto+Serif+TC&display=swap" rel="stylesheet">
+    <title>必選修 / 課程地圖</title>
 
     <script src="../js/nav.js"></script>
     <script src="../js/footer.js"></script>
@@ -26,7 +29,133 @@
     <div id="app">
         <nav-component></nav-component>
         <main>
-            
+            <div class="bulletin">
+                <h1 class="subject">電子物理學系大學部 必選修科目</h1>
+                <h3>各學年必選修科目冊<a href="https://web085004.adm.ncyu.edu.tw/webcourse/course_rpt.aspx?CRSQuery=1093420" target="_blank">查詢</a></h3>
+                <table>
+                    <caption><b>電子物理學系學士班 修課流程</b></caption>
+                    <thead>
+                        <th class="col11">年級<br>學期</th>
+                        <th class="col12">系基礎學程<br>（必修28學分）</th>
+                        <th class="col13">系核心學程<br>（必修28學分）</th>
+                        <th class="col14">光電科學技術學程<br>（選修21學分）</th>
+                        <th class="col15">半導體電子技術學程<br>（選修21學分）</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="odd">大一上</td>
+                            <td class="lesson coma1">普通物理學(I)<br>普通物理學實驗(I)<br>普通化學(I)<br>普通化學實驗(I)</td>
+                            <td class="lesson elea1"></td>
+                            <td class="lesson phoa1"></td>
+                            <td class="lesson smca1"></td>
+                        </tr>
+                        <tr>
+                            <td class="even">大一下</td>
+                            <td class="lesson comb1">普通物理學(II)<br>普通物理學實驗(II)<br>普通化學(II)<br>普通化學實驗(II)<br>應用數學(I)</td>
+                            <td class="lesson eleb1"></td>
+                            <td class="lesson phob1">基本電學</td>
+                            <td class="lesson smcb1">基本電學</td>
+                        </tr>
+                        <tr>
+                            <td class="odd">大二上</td>
+                            <td class="lesson coma1">理論力學(I)<br>電磁學(I)<br>應用數學(II)</td>
+                            <td class="lesson elea1">實驗物理(I)<br>電路學</td>
+                            <td class="lesson phoa1">電子物理入門<br>計算機在物理之應用</td>
+                            <td class="lesson smca1">電子物理入門<br>計算機在物理之應用</td>
+                        </tr>
+                        <tr>
+                            <td class="even">大二下</td>
+                            <td class="lesson comb1"></td>
+                            <td class="lesson eleb1">實驗物理(II)<br>電子學(I)<br>電磁學(II)<br>應用數學(III)</td>
+                            <td class="lesson phob1">理論力學(II)<br>磁光學</td>
+                            <td class="lesson smcb1">理論力學(II)<br>數位邏輯</td>
+                        </tr>
+                        <tr>
+                            <td class="odd">大三上</td>
+                            <td class="lesson coma1"></td>
+                            <td class="lesson elea1">光學(I)<br>量子物理(I)<br>電子學實驗(I)<br>熱統計物理(I)<br>專題研究(I)</td>
+                            <td class="lesson phoa1">應用數學(IV)</td>
+                            <td class="lesson smca1">應用數學(IV)<br>固態電子學<br>電子學(II)</td>
+                        </tr>
+                        <tr>
+                            <td class="even">大三下</td>
+                            <td class="lesson comb1"></td>
+                            <td class="lesson eleb1">量子物理(II)</td>
+                            <td class="lesson phob1">半導體元件物理<br>計算物理導論<br>熱統計物理(II)<br>實驗物理(III)<br>專題研究(II)<br>光學(II)</td>
+                            <td class="lesson smcb1">半導體元件物理<br>計算物理導論<br>熱統計物理(II)<br>實驗物理(III)<br>專題研究(II)<br>電子學實驗(II)</td>
+                        </tr>
+                        <tr>
+                            <td class="odd">大四上</td>
+                            <td class="lesson coma1"></td>
+                            <td class="lesson elea1"></td>
+                            <td class="lesson phoa1">光電半導體元件<br>書報討論(I)<br>專題研究(III)<br>光電子學<br>光電科技導論<br>光電實驗<br>雷射光學</td>
+                            <td class="lesson smca1">光電半導體元件<br>書報討論(I)<br>專題研究(III)<br>材料科學概論<br>量子力學導論</td>
+                        </tr>
+                        <tr>
+                            <td class="even">大四下</td>
+                            <td class="lesson comb1"></td>
+                            <td class="lesson eleb1"></td>
+                            <td class="lesson phob1">太陽能電池<br>書報討論(II)<br>專題研究(IV)<br>專業校外實習<br>近代光學<br>光電量測與分析<br>光電實驗</td>
+                            <td class="lesson smcb1">太陽能電池<br>書報討論(II)<br>專題研究(IV)<br>專業校外實習<br>固態物理導論<br>半導體製程技術導論</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h1 class="map">電子物理學系大學部 課程地圖</h1>
+                <img src="https://web085004.adm.ncyu.edu.tw/updata/class/1093420.jpg" title="大學部 課程架構圖">
+                <h1 class="subject">光電暨固態電子碩士班 必選修科目</h1>
+                <h3>各學年必選修科目冊<a href="https://web085004.adm.ncyu.edu.tw/webcourse/course_rpt.aspx?CRSQuery=10924A0" target="_blank">查詢</a></h3>
+                <table>
+                    <caption><b>光電暨固態電子碩士班 修課流程</b></caption>
+                    <table>
+                        <thead>
+                            <th class="col21">年級</th>
+                            <th colspan="2" class="col22">組別</th>
+                            <th colspan="2" class="col23">專業選修</th>
+                            <th class="col24">必修</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td rowspan="2" class="odd">碩一上</td>
+                                <td colspan="2" class="pho">光電組</td>
+                                <td colspan="2" class="lesson phoelea2">光電科技導論<br>光電子學<br>光電半導體元件<br>光電實驗<br>光纖光學<br>液晶光學<br>能源材料<br>平面顯示器原理</td>
+                                <td rowspan="2" class="coma2">專題討論(I)</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="smc">半導體組</td>
+                                <td colspan="2" class="lesson smcelea2">固態電子學<br>材料科學概論<br>量子力學導論<br>奈米材料特性分析技術<br>自旋電子學<br>真空技術<br>電子顯微鏡導論<br>半導體工業技術</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2" class="even">碩一下</td>
+                                <td colspan="2" class="pho">光電組</td>
+                                <td colspan="2" class="lesson phoeleb2">光電量測與分析<br>太陽能電池<br>有機光電材料與元件<br>光電實驗<br>近代光學<br>雷射光學<br>傅氏光學<br>非線性光學<br>晶體光學</td>
+                                <td rowspan="2" class="comb2">專題討論(II)</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="smc">半導體組</td>
+                                <td colspan="2" class="lesson smceleb2">半導體元件物理<br>固態物理導論<br>計算物理導論<br>磁性技術與應用<br>薄膜科學與技術<br>奈米顯微與微影技術<br>磁光學<br>奈米碳管物理</td>
+                            </tr>
+                            <tr>
+                                <td class="odd">碩二上</td>
+                                <td class="pho" style="width:5%;">光電組</td>
+                                <td class="smc" style="width:5%;">半導體組</td>
+                                <td class="lesson phoelea2" style="width:10%;"></td>
+                                <td class="lesson smcelea2" style="width:10%;"></td>
+                                <td class="coma2">畢業論文<br>專題討論(III)</td>
+                            </tr>
+                            <tr>
+                                <td class="even">碩二下</td>
+                                <td class="pho">光電組</td>
+                                <td class="smc">半導體組</td>
+                                <td class="lesson phoeleb2"></td>
+                                <td class="lesson smceleb2"></td>
+                                <td class="comb2">畢業論文<br>專題討論(IV)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </table>
+                <h1 class="map">光電暨固態電子碩士班 課程地圖</h1>
+                <img src="https://web085004.adm.ncyu.edu.tw/updata/class/10924A0.jpg" title="碩士班 課程架構圖" style="width:60%;">
+            </div>
         </main>
         <footer-component></footer-component>
     </div>

@@ -1,0 +1,79 @@
+h1 {
+    margin: 30px;
+    margin-left: 0px;
+    padding: 5px 10px 10px 15px;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 200%;
+    width: 28%;
+    border-bottom: 3px dotted #9528b1;
+    border-left: 8px solid #fc8b13;
+    color: #414040;
+}
+
+caption {
+    caption-side: top; 
+    text-align: center;
+    margin-top: 20px;
+    font-size: 160%;
+    color: #ff3769;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+table, th, td {
+    border: 1px solid #ffffff;
+    border-collapse: separate;
+    border-spacing: 0;
+    text-align: center;
+    border-radius: 10px;
+}
+
+th {
+    background-color: #c5c4c4;
+    padding: 5px;
+    font-size: 110%;
+}
+
+a {
+    color: #f18818;
+    font-size: 105%;
+}
+
+.odd {
+    background-color: #c2e7be;
+}
+
+.odd:hover {
+    background-color: #f8ccda;
+}
+
+.odd a:hover {
+    color: #049404;
+}
+
+.even {
+    background-color: #c2d3e9;
+}
+
+.even:hover {
+    background-color: #f6cfb5;
+}
+
+.even a:hover{
+    color: #2e2ef1;
+}
+
+.col1 {
+    width: 15%;
+}
+
+.col2 {
+    width: 30%;
+}
+
+.col3 {
+    width: 15%;
+}
+
+.col4 {
+    width: 20%;
+}

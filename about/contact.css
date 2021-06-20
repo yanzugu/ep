@@ -1,0 +1,89 @@
+.bulletin h1 {
+    margin: 30px;
+    margin-left: 0px;
+    padding: 5px 10px 10px 15px;
+    font-family: 'Noto Sans TC', sans-serif;
+    width: 33%;
+    border-bottom: 3px dotted #44fc4d;
+    border-left: 8px solid #fc8b13;
+    color: #414040;
+}
+
+.bulletin caption {
+    caption-side: top; 
+    text-align: center;
+    margin-top: 20px;
+    font-size: 150%;
+    color: #2d51f5;
+    font-family: 'Noto Serif TC', serif;
+}
+
+.bulletin a {
+    color: #f34990;
+}
+
+.bulletin table, th, td {
+    border: 1px solid #ffffff;
+    border-collapse: separate;
+    border-spacing: 0;
+    text-align: center;
+}
+
+.job {
+    text-align: left;
+}
+
+th {
+    background-color: #7ffdb8;
+    padding: 5px;
+    font-size: 110%;
+}
+
+th:first-child {
+    border-top-left-radius: 10px;
+}
+
+th:last-child {
+    border-top-right-radius: 10px;
+}
+
+tr:last-child td:first-child{
+    border-bottom-left-radius: 10px;
+}
+
+tr:last-child td:last-child{
+    border-bottom-right-radius: 10px;
+}
+
+td {
+    font-family: 'Noto Sans TC', sans-serif;
+    padding: 5px;
+}
+
+.odd {
+    background-color: #f8c2b1;
+}
+
+.even {
+    background-color: #cbebfa;
+}
+
+.col1 {
+    width: 15%;
+}
+
+.col2 {
+    width: 10%;
+}
+
+.col3 {
+    width: 12%;
+}
+
+.col4 {
+    width: 22%;
+}
+
+.col5 {
+    width: 41%;
+}

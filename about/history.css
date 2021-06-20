@@ -1,0 +1,26 @@
+h1 {
+    font-family: 'Noto Sans TC', sans-serif;
+    width: 40% auto;
+    margin: 40px;
+    padding-bottom: 20px;
+    border-bottom: 3px double #fa74a0;
+    text-align: center;
+    color: rgb(117, 21, 21);
+}
+
+.bulletin li {
+    width: 80% auto;
+    margin: 10px;
+    font-size: 120%;
+    font-family: 'Noto Serif TC', serif;
+}
+
+strong {
+    color: #1378d6;
+    font-size: 110%;
+}
+
+.previous {
+    color: #fa8435;
+    font-size: 110%;
+}

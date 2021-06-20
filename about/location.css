@@ -1,0 +1,27 @@
+.bulletin h1 {
+    font-family: 'Noto Sans TC', sans-serif;
+    text-align: center;
+    width: auto;
+    margin: 35px;
+    padding-bottom: 15px;
+    border-bottom: 3px dashed #f8324d;
+    color: #04660c;
+}
+
+.bulletin h4 {
+    width: 80% auto;
+    margin-left: 10px;
+    color: #0586ff;
+}
+
+.bulletin p {
+    width: 80% auto;
+    margin: 10px;
+    font-size: 120%;
+    font-family: 'Noto Serif TC', serif;
+}
+
+.bulletin strong {
+    color: #ff00b3;
+    font-size: 110%;
+}

@@ -1,0 +1,176 @@
+.subject {
+    margin-top: 50px;
+    padding-left: 15px;
+    margin-bottom: 15px;
+    border-left: 10px double #e253fb;
+}
+
+.map {
+    margin-top: 50px;
+    padding-left: 15px;
+    margin-bottom: 15px;
+    border-left: 10px double #5ff8df;
+}
+
+table, th, td {
+    border: 1px solid #ffffff;
+    border-collapse: separate;
+    border-spacing: 0;
+    text-align: center;
+}
+
+caption {
+    caption-side: top; 
+    text-align: center;
+    margin-top: 20px;
+    font-size: 160%;
+    color: #622b2b;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+th {
+    padding: 5px;
+    font-size: 110%;
+}
+
+th:first-child {
+    border-top-left-radius: 15px;
+}
+
+th:last-child {
+    border-top-right-radius: 15px;
+}
+
+tr:last-child td:first-child{
+    border-bottom-left-radius: 15px;
+}
+
+tr:last-child td:last-child{
+    border-bottom-right-radius: 15px;
+}
+
+.lesson {
+    vertical-align: top;
+    font-family: 'Noto Serif TC', serif;
+}
+
+.odd {
+    background-color: #f0ecec;
+}
+
+.even {
+    background-color: #b3b2b2;
+}
+
+.col11 {
+    width: 5%;
+    background-color: #ffffff;
+}
+
+.col12 {
+    width: 20%;
+    background-color:rgb(209, 53, 53);
+}
+
+.col13 {
+    width: 20%;
+    background-color: coral;
+}
+
+.col14 {
+    width: 20%;
+    background-color: rgb(61, 119, 173);
+}
+
+.col15 {
+    width: 20%;
+    background-color: rgb(74, 167, 74);
+}
+
+.coma1 {
+    background-color: #f5aeae;
+}
+
+.comb1 {
+    background-color: #f57b7b;
+}
+
+.elea1 {
+    background-color: #f5c8ae;
+}
+
+.eleb1 {
+    background-color: #f69060;
+}
+
+.phoa1 {
+    background-color: #aac8f8;
+}
+
+.phob1 {
+    background-color: #6ea4fa;
+}
+
+.smca1 {
+    background-color: #afe6a7;
+}
+
+.smcb1 {
+    background-color: #6fda65;
+}
+
+.col21 {
+    width: 10%;
+    background-color: #ffffff;
+}
+
+.col22 {
+    width: 10%;
+    background-color:coral;
+}
+
+.col23 {
+    width: 20%;
+    background-color: #ffb592;
+}
+
+.col24 {
+    width: 20%;
+    background-color: rgb(209, 53, 53);
+}
+
+.pho {
+    background-color: rgb(61, 119, 173);
+}
+
+.smc {
+    background-color: rgb(74, 167, 74);
+}
+
+.phoelea2 {
+    background-color: #aac8f8;
+}
+
+.phoeleb2 {
+    background-color: #6ea4fa;
+}
+
+.smcelea2 {
+    background-color: #afe6a7;
+}
+
+.smceleb2 {
+    background-color: #6fda65;
+}
+
+.coma2 {
+    background-color: #f5aeae;
+    vertical-align: center;
+    font-family: 'Noto Serif TC', serif;
+}
+
+.comb2 {
+    background-color: #f57b7b;
+    vertical-align: center;
+    font-family: 'Noto Serif TC', serif;
+}

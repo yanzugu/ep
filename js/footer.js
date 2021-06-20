@@ -20,7 +20,7 @@ const footer = {
                     <div>
                         <ul>
                             <li style="text-align: left; width: 100%;">
-                                <h5 style="color: #fff;">導覽連結</h1>
+                                <h5 style="color: #fff;">導覽連結</h5>
                             </li>
                         </ul>
                     </div>
